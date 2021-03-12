@@ -9,7 +9,7 @@
     "author": "Nate Welch",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nateawelch/mooncatpnggenerator.git"
+        "url": "https://github.com/nateawelch/Moon-Cat-PNG-Generator"
     },
     "dependencies": {
         "jimp": "^0.16.1",
