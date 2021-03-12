@@ -1,15 +1,18 @@
 {
-    "name": "mooncatparser",
+    "name": "mooncatpnggenerator",
     "version": "1.0.0",
-    "description": "Official MoonCat Generation Library for the MoonCatRescue Ethereum Smart Contract",
-    "main": "mooncatparser.js",
+    "description": "Tool for generating mooncat pngs",
+    "main": "src/index.js",
     "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
+        "start":"node src/index.js"
     },
-    "author": "ponderware ltd.",
-    "license": "SEE LICENSE IN license.txt",
-    "repository" :{
-	"type" : "git",
-	"url" : "https://github.com/ponderware/mooncatparser.git"
+    "author": "Nate Welch",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nateawelch/mooncatpnggenerator.git"
+    },
+    "dependencies": {
+        "jimp": "^0.16.1",
+        "yargs": "^16.2.0"
     }
 }
