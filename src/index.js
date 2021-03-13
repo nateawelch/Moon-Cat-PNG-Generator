@@ -8,14 +8,14 @@ const fs = require('fs')
 yargs
   .scriptName("mooncatpnggen")
   .usage('$0 <cmd> [args]')
-  .command('png [catIds]', 'Generate png of a catId', (yargs) => {
+  .command('png [catId]', 'Generate png of a catId', (yargs) => {
     yargs.positional('catId', {
       type: 'string',
       describe: 'catId to generate image for'
     })
   }, async function (argv) {
     CatTools.generateImage(argv.catId)
-    console.log(argv+".png" + " generated")
+    console.log(argv.catId+".png" + " generated")
 
   })
   .command('bulkpng [file]', 'Generate pngs from a file containing catIds', (yargs) => {
